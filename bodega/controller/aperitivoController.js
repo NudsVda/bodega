@@ -1,4 +1,4 @@
-import { aperitivoView } from '/bodega/view/aperitivoView.js'
+import { aperitivoView } from '../view/aperitivoView.js'
 
 class AperitivoController {
     

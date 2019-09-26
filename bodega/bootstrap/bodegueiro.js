@@ -1,4 +1,4 @@
-import { AperitivoController } from '/bodega/controller/aperitivoController.js'
+import { AperitivoController } from '../controller/aperitivoController.js'
 
 
 /**
