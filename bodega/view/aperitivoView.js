@@ -1,10 +1,20 @@
-let aperitivoView =  `<h2>WTF?!</h2>
-        <p>Bodega é uma gambiarra para brincar com camadas, mvc e tudo mais! O que queremos mesmo é aprender javascript </p>
-        <p>Na Bodega as pessoas fazem coisas podendo dizer que não lembram depois!</p>
-        <p>Então, bem vindo para fazer gambiarras!</p>
-        <p>Mas lembre, quem vai na bodega esquece, mas o versionamento não!</p>
-        <p>Bodega não se preocupa com desempenho, quanto mais a barrinha de carregamento girar melhor!</p>
-        <p>Ninguém se preocupa com boas práticas e padrões, Bodega é raiz, sente aí e aprecie um Rollmops!</p>
-        `        
+class AperitivoView 
+{        
+
+        render = function(data)
+        {               
+               let mesa = document.querySelector('#mesa')
+               let h2 = document.createElement('h2')
+               h2.innerText = 'Lista de Vídeos'
+               mesa.appendChild(h2)
+               let ul = document.createElement('ul')
+               mesa.appendChild(ul)
+               data.forEach(function(item){
+                   let li = document.createElement('li')
+                   li.innerText = `${item.title} | ${item.description}`
+                   mesa.appendChild(li)
+               })
+        }
+}   
         
-export { aperitivoView }
+export { AperitivoView }

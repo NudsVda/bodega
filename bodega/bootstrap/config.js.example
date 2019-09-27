@@ -1,0 +1,5 @@
+const usuario = 'usuario'
+const senha = 'senha'
+const url  = 'url-do-server'
+
+export { usuario, senha, url}
